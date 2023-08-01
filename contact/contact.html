@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Slate - Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header2">
+    <div class="container d-flex align-items-center">
+      <a href="../index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+
+          <!--li><a class="nav-link scrollto active" href="#hero">Home</a></li
+          <li><a class="nav-link scrollto" href="#about">Our Vision</a></li>
+          <li><a class="nav-link scrollto" href="#about2">Our Vision</a></li>
+          <li><a class="nav-link scrollto" href="#faq"></a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+ <br>
+ <br>
+
+
+  <main id="main">
+
+    <section class="contact section" id="contact">
+      <div class="contact__container bd-grid container">
+<div data-aos="fade-up" data-aos-delay="100"> <h2 class="contact__title" style="width: 300px;">Chat with us!</h2>  
+<h3 class="contact__raw">Our AI-experts are here to guide you through our suite of automation solutions and answer any questions you may have. Get in touch today for a personalized consultation.</h3>
+<div class="checklist" data-aos="fade-up" data-aos-delay="100">
+  <img src="assets/img/check.svg" alt="Checkmark">
+  <p class="check__text">Discover how AI can optimize your organization.</p>
+</div>          
+<div class="checklist" data-aos="fade-up" data-aos-delay="200">
+  <img src="assets/img/check.svg" alt="Checkmark">
+  <p class="check__text">Explore tailor-made AI solutions designed to meet the unique needs of your organization.</p>
+</div>         
+<div class="checklist" data-aos="fade-up" data-aos-delay="300">
+  <img src="assets/img/check.svg" alt="Checkmark">
+  <p class="check__text">Make your employees more valuable by making their jobs more rewarding and motivating.</p>
+</div>         
+<div class="contact__info">
+              <h3 class="contact__subtitle">EMAIL US</h3>
+              <span class="contact__text">contact@slate-consultancy.com</span>
+
+          </div>
+      </div>
+<div>                     <h2 class="details__title">Fill in your contact details for a free consultation</h2> 
+<form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+              <div class="contact__inputs">
+                  <input type="text" id="name" placeholder="Full name" class="contact__input" required>
+                  <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                  <input type="text" id="company" placeholder="Company name" class="contact__input" required>
+                  <textarea name="aboutcompany" id="aboutcompany" placeholder="Tell us about your company" cols="30" rows="8" class="contact__input"></textarea>
+                </div>
+              <input type="submit" value="Book a consultation" class="contact__button">
+          </form>
+          <img src="assets/img/illustrations3.svg" class="illustrations3" alt="Illustrations">
+
+      </div>
+      </div>
+  </section>
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; <strong><span></span></strong>All Rights Reserved
+      </div>
+      <div class="contactinfo"></div>
+      <div class="socialmedia">
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+     <!--===== CONTACT FORM =====-->
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+         function sendEmail(){
+             Email.send({
+                 SecureToken : "bf57b685-a8fd-409c-a29b-3309f94c0691",
+                 To : 'chatbot@slate-consultancy.com',
+                 From : "huddiuf@gmail.com",
+                 Subject : "David demo inquiry",
+                 Body : "Name: " + document.getElementById("name").value
+                     + "<br> Email: " + document.getElementById("email").value
+                     + "<br> Company: " + document.getElementById("company").value
+                     + "<br> About company: " + document.getElementById("aboutcompany").value
+             }).then(
+             message => alert("Success! (4)")
+             );
+         }
+
+
+     </script>
+
+
+
+</body>
+</html>
