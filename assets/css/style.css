@@ -522,7 +522,9 @@ section {
 # Services
 --------------------------------------------------------------*/
 
-
+.home__video {
+  border-radius: 50px; /* Adjust the value as needed to control the level of rounding */
+}
 
 .illustrations {
   position: absolute;
@@ -1200,3 +1202,44 @@ section {
   /* Set the font size and any other styles you need for the icon */
   font-size: 48px;
 }
+
+
+
+  /* Custom styles for smaller devices */
+  @media (max-width: 767.98px) {
+    .custom-text {
+      text-align: center; /* Center the text horizontally on smaller screens */
+    }
+
+    .custom-text h1 {
+      font-size: 15px; /* Adjust the font size as needed */
+      padding-left: 5rem;
+    }
+
+    .custom-text h2 {
+      font-size: 18px; /* Adjust the font size as needed */
+    }
+
+    #featured {
+      display: none;
+    }
+
+.sketch-image {
+      display: none;
+    }
+
+
+/* Hide the backofficesketch.png and hrsketch.png images */
+#automating .sketch-image,
+#hr .sketch-image {
+  display: none !important
+}
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    #services .container .col.mb-5 {
+      padding-top: 0;
+      margin-top: -130px; /* Adjust the value to move the text closer to the video */
+    }
+  }

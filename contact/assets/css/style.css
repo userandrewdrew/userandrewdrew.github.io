@@ -448,7 +448,6 @@ img{
   position: relative;
   z-index: 1;
   overflow: hidden; /* Add this to hide overflowing content */
-  height: 90vh; /* Set the height to 100vh to fill the entire viewport */
 
 }
 
@@ -599,54 +598,7 @@ justify-content: top;
 
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-.home__img {
-  width: 230px;
-}
-.home__background {
-  width: 230px;
-}
 
-
-}
-
-
-@media screen and (max-width: 767px) {
-  .home__img {
-      position: absolute;
-      left: 0;
-      width: 230px;
-  }
-
-
-  .home__background {
-      position: absolute;
-      left: 0;
-      width: 230px;
-  }
-
-
-  .home__video {
-      position: absolute;
-      right: 15%;
-      width: 210px;
-  }
-
-
-
-
-
-
-  .custom-button{
-      margin: 0 auto;
-    }
- 
-
-
-  .home__title {
-      margin-bottom: 10rem; /* Adjust the margin as desired */
-  }
-}
 
 
 @media screen and (min-width: 768px){
@@ -745,6 +697,7 @@ justify-content: top;
   .contact__form{
       width: 380px;
   }
+
 
 
   .footer__container{

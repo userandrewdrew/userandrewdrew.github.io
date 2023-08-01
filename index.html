@@ -52,22 +52,26 @@
   </header>
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <video autoplay loop muted playsinline height="1080" width="1920">
-      <source src="assets/img/movie.mp4" type="video/mp4"/>
-    </video>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <video autoplay loop muted playsinline height="1080" width="1920">
+    <source src="assets/img/movie.mp4" type="video/mp4"/>
+  </video>
 
-    <div class="container">
-      <div class="row">
-          <div class="custom-text col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1>Unlock efficiency with AI.</h1>
-            <h2></h2>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-12 d-flex justify-content-end">
+        <div class="custom-text d-flex flex-column justify-content-center pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <h1>Unlock efficiency with AI.</h1>
+          <h2></h2>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- End Hero -->
+  </div>
+</section>
+<!-- End Hero -->
+
+
 
   <main id="main">
 
@@ -177,8 +181,9 @@
         <div class="row gx-5">
                <div class="col">
                    <div class="row gx-5 row-cols-1 row-cols-md-2 container" >
-                    <video autoplay muted loop class="home__video" width="250px" height="700px" poster="assets/img/v2.gif">
-                      <source src="david/assets/img/v2.webm" type="video/webm">
+                    <video autoplay muted loop class="home__video" height="700px">
+                      <source src="assets/img/v2.mp4" type="video/mp4"> <!-- Default: MP4 format -->
+                      <source src="assets/img/v2.webm" type="video/webm"> <!-- Backup: WebM format -->
                       Your browser does not support the video tag.
                     </video>
                        <div class="col mb-5 h-100 container" style="padding-top: 70px; max-width: 550px;" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="100">
@@ -213,7 +218,7 @@
                         <a href="#contact" class="btn-learn-more">Get to know us</a>
                       </div>
                     <div class="col h-100">
-                      <img src="assets/img/backofficesketch.png" width="856" height="571" alt="" style="display: block; margin-left: -90px;">
+                      <img src="assets/img/backofficesketch.png" width="856" height="571" alt="" class="sketch-image" style="display: block; margin-left: -90px;">
                     </div>
                 </div>
             </div>
@@ -232,7 +237,7 @@
         <div class="col-md-6">
           <div class="row gx-5">
             <div class="col h-100">
-              <img src="assets/img/marketingsketch.png" width="750" alt="" style="margin-left: -90px;">
+              <img src="assets/img/marketingsketch.png" width="750" alt="" class="sketch-image" style="margin-left: -90px;">
             </div>
           </div>
         </div>
@@ -265,7 +270,7 @@
               <a href="#contact" class="btn-learn-more">Contact us</a>
             </div>
             <div class="col h-100">
-              <img src="assets/img/hrsketch.png" width="856" height="571" alt="" style="display: block; margin-left: -80px;">
+              <img src="assets/img/hrsketch.png" width="856" height="571" alt="" class="sketch-image" style="display: block; margin-left: -80px;">
             </div>
           </div>
         </div>

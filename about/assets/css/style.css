@@ -704,3 +704,79 @@ body {
   color: #47b2e4; /* Swapped the color to blue for the hover state */
   text-decoration: none;
 }
+
+
+
+
+
+
+  /* Custom styles for smaller devices */
+  @media (max-width: 767.98px) {
+    .custom-text {
+      text-align: center; /* Center the text horizontally on smaller screens */
+    }
+
+    
+    .custom-text h1 {
+      font-size: 15px; /* Adjust the font size as needed */
+      padding-left: 5rem;
+    } 
+  }
+  @media screen and (max-width: 768px) {
+    #about .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #about .col-lg-6 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #about .section-title,
+    #about .section-text2 {
+      font-size: 14px; /* Adjust the font size as needed */
+      max-width: 400px; /* Adjust this value as needed to fit the content */
+      padding-right: 25px; /* Add padding to the right side */
+
+    }
+  
+    #about img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+/* Adjust the font size and center the content horizontally for small devices */
+@media screen and (max-width: 768px) {
+  #about3 .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about3 .col-lg-6 {
+    width: 100%;
+    display: flex; /* Use flex display */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    margin-left: -5rem; /* Apply negative margin to remove the left gap */
+  }
+
+  #about3 .section-title,
+  #about3 .section-title2,
+  #about3 .section-text2 {
+    font-size: 14px; /* Adjust the font size as needed */
+    max-width: 400px; /* Adjust this value as needed to fit the content */
+    margin-left: 0; /* Remove any left margin */
+    padding-right: 2rem;
+  }
+
+  #about3 img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5rem;
+  }
+}
+
+
